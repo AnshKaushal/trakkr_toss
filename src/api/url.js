@@ -1,1 +1,1 @@
-export const URL = "geo-trakkr-backend.vercel.app/api"
+export const URL = "https://geo-trakkr-backend.vercel.app/api"
