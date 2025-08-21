@@ -1,0 +1,45 @@
+You are analyzing a brand based on the following scraped content and/or the webpage's url input with this:
+
+{scraped_text}
+
+1. Extract the formal brand name: What is the official name of the brand based on the content provided?
+2. Suggest name variants: Identify 3–4 potential name variants for this brand that users or AI systems might use. Variants may include abbreviations, common misspellings, or common usage names.
+3. Write a brand description: Based on the scraped content, write a nice description that succinctly describes the brand, its services, or its value proposition It should be 6 lines or more.
+4. Generate 5 search-friendly visibility prompts: Create 5 AI search queries that users might use to discover brands similar to this one. These should be general, industry-relevant search queries, such as “Top 10 AI-based services for healthcare” or “What are the leading data annotation services for AI in 2025?”
+
+Respond ONLY in the following structured JSON format:
+
+{
+  "brand_name": "...",
+  "name_variants": ["...", "...", "..."],
+  "description": "...",
+  "prompts": [
+    "...",
+    "...",
+    "...",
+    "...",
+    "..."
+  ]
+}
+Explanation of Prompt Structure:
+Brand Name Extraction: Mistral will extract the official brand name based on what is mentioned in the scraped content.
+
+Name Variants: The agent will suggest alternative names, which may include commonly used abbreviations or other names people might associate with the brand.
+
+Brand Description: The agent will create a brief, accurate description of the brand from the scraped content.
+
+Visibility Prompts: These are the search queries that users may use to find this brand on search engines or AI LLMs, such as industry-specific or service-related prompts.
+
+Example of Expected JSON Output from Mistral Agent
+{
+  "brand_name": "Practo",
+  "name_variants": ["Practo", "Practo Health", "Practo App"],
+  "description": "Practo is a healthcare platform offering instant video consultations with verified doctors across various specialties. It provides services such as booking appointments, accessing health articles, and finding clinics and hospitals, primarily serving users in India. The platform emphasizes convenience and trust, enabling patients to connect with top doctors online from the comfort of their homes. Practo also supports healthcare providers with dedicated tools and services.",
+  "prompts": [
+    "Top 10 online healthcare platforms in India",
+    "Best platforms for doctor consultations online",
+    "Top 10 telemedicine services for convenient at-home healthcare in 2025",
+    "Top AI-driven healthcare services for home consultation",
+    "Top 10 online doctor consultation platforms in India for instant medical advice in 2025?"
+  ]
+}
