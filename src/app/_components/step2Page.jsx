@@ -339,11 +339,11 @@ const Step2Page = ({ brandId, brandData, email, onBackToStep1, onReset }) => {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-0">
             <div className="flex items-center space-x-3">
               <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">T</span>
+                <span className="text-white font-bold text-sm">G</span>
               </div>
               <div>
                 <h1 className="text-lg sm:text-xl font-semibold text-slate-900">
-                  Trakkr.ai
+                  GEO Trakkr
                 </h1>
                 <p className="text-xs text-slate-500">
                   Brand Intelligence Platform

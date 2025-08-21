@@ -148,12 +148,12 @@ const MainPage = () => {
             <div className="flex items-center space-x-2 sm:space-x-3">
               <div className="h-7 w-7 sm:h-8 sm:w-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xs sm:text-sm">
-                  T
+                  G
                 </span>
               </div>
               <div>
                 <h1 className="text-lg sm:text-xl font-semibold text-slate-900">
-                  Trakkr.ai
+                  GEO Trakkr
                 </h1>
                 <p className="text-xs text-slate-500 hidden sm:block">
                   Brand Intelligence Platform
